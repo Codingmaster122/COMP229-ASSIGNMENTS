@@ -1,0 +1,34 @@
+
+<%- include partials/header %>
+<header>
+<%- include partials/main_nav %>
+</header>
+  <!-- It checks if the user as entered or pressed that specific title-->
+  <!-- then it will check if it is true or false and if it is true then it will link you to the specific ejs.-->
+  
+  
+  <% if(title == "Home") { %> 
+    <%- include partials/home %>
+  <%} else if(title == "About") { %> 
+    <%- include partials/about %>
+  <%} else if(title == "Services") { %> 
+    <%- include partials/services %>
+  <%} else if(title == "Projects") { %> 
+    <%- include partials/projects %>
+    <%} else if(title == "Contact") { %> 
+      <%- include partials/contact %>
+
+  <% } %>            
+
+  <%- include partials/buttom_nav %>
+ 
+  <%- include partials/footer %>
+
+
+
+
+
+
+
+
+
