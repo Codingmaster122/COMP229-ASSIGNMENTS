@@ -1,0 +1,36 @@
+
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="row">
+        <div class="offset-md-1 col-md-10">
+            <h1><%= title %></h1>
+            <br>
+            <table class="table table-bordered table-striped table-hover">
+                <!-- Header Row-->
+                <tr class="d-flex">
+                    <th class="text-center col-1">Username</th>
+                    <th class="text-center col-1">Password</th>
+                    <th class="text-center col-1">Email</th>
+                </tr>
+
+                <!-- Repeatable Template Row -->
+
+                <% for(let count = 0; count < Contactlist.length; count++) { %>
+                    <tr class="d-flex">
+                        <td class="text-center col-1"><%=  ContactList[count].Username %></td>
+                        <td class="text-center col-1"><%= ContactList[count].Password %></td>
+                        <td class="text-center col-1"><%= ContactList[count].Email %></td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+  </main>
+  
+
+
+
+
+
+
